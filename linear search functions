@@ -1,0 +1,11 @@
+def my_function(s,search):
+    found=False
+    for i in range(len(s)):
+        if s[i]==search:
+            found=True
+            return i
+    if found==False:
+            return "not found"
+s=[1,2,3,9,5,2]
+search=2
+print(my_function(s,search))
